@@ -1,0 +1,159 @@
+---
+// Navbar.astro
+---
+
+<nav class="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="#" class="flex items-center">
+          <!-- Logo placeholder -->
+          <div class="w-10 h-10 bg-gradient-to-br from-accent-lime-400 to-accent-lime-500 rounded-lg flex items-center justify-center mr-3 shadow-md">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <span class="text-xl font-bold text-primary-900">AI CoP</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <a href="#" class="text-primary-900 hover:text-accent-lime-500 px-3 py-2 text-sm font-medium transition-colors duration-200">
+            About
+          </a>
+          <a href="#focus-areas" class="text-primary-900 hover:text-accent-lime-500 px-3 py-2 text-sm font-medium transition-colors duration-200">
+            Focus Areas
+          </a>
+          <a href="#structure" class="text-primary-900 hover:text-accent-lime-500 px-3 py-2 text-sm font-medium transition-colors duration-200">
+            How It Works
+          </a>
+          <a href="#pricing" class="text-primary-900 hover:text-accent-lime-500 px-3 py-2 text-sm font-medium transition-colors duration-200">
+            Pricing
+          </a>
+          <a href="#member-criteria" class="text-primary-900 hover:text-accent-lime-500 px-3 py-2 text-sm font-medium transition-colors duration-200">
+            Criteria
+          </a>
+          <a href="#facilitator" class="text-primary-900 hover:text-accent-lime-500 px-3 py-2 text-sm font-medium transition-colors duration-200">
+            Facilitator
+          </a>
+          <a href="#" class="text-primary-900 hover:text-accent-lime-500 px-3 py-2 text-sm font-medium transition-colors duration-200">
+            FAQ
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:block">
+        <a href="#pricing" class="bg-gradient-to-r from-accent-lime-400 to-accent-lime-500 hover:from-accent-lime-500 hover:to-accent-lime-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 text-sm">
+          Join Now
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-button" class="mobile-menu-button text-primary-900 hover:text-accent-lime-500 focus:outline-none focus:text-accent-lime-500 transition-colors duration-200">
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger icon -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- X icon (hidden by default) -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
+        <a href="#" class="text-primary-900 hover:text-accent-lime-500 hover:bg-gray-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md">
+          About
+        </a>
+        <a href="#focus-areas" class="text-primary-900 hover:text-accent-lime-500 hover:bg-gray-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md">
+          Focus Areas
+        </a>
+        <a href="#structure" class="text-primary-900 hover:text-accent-lime-500 hover:bg-gray-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md">
+          How It Works
+        </a>
+        <a href="#pricing" class="text-primary-900 hover:text-accent-lime-500 hover:bg-gray-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md">
+          Pricing
+        </a>
+        <a href="#member-criteria" class="text-primary-900 hover:text-accent-lime-500 hover:bg-gray-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md">
+          Criteria
+        </a>
+        <a href="#facilitator" class="text-primary-900 hover:text-accent-lime-500 hover:bg-gray-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md">
+          Facilitator
+        </a>
+        <a href="#" class="text-primary-900 hover:text-accent-lime-500 hover:bg-gray-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md">
+          FAQ
+        </a>
+        <!-- Mobile CTA -->
+        <div class="pt-4">
+          <a href="#pricing" class="bg-gradient-to-r from-accent-lime-400 to-accent-lime-500 hover:from-accent-lime-500 hover:to-accent-lime-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md block text-center transition-all duration-200">
+            Join Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Mobile menu toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = mobileMenuButton.querySelector('svg:first-child');
+    const xIcon = mobileMenuButton.querySelector('svg:last-child');
+
+    mobileMenuButton.addEventListener('click', function() {
+      const isHidden = mobileMenu.classList.contains('hidden');
+
+      if (isHidden) {
+        // Show menu
+        mobileMenu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        xIcon.classList.remove('hidden');
+      } else {
+        // Hide menu
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        xIcon.classList.add('hidden');
+      }
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        xIcon.classList.add('hidden');
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            const offsetTop = target.offsetTop - 80; // Account for sticky navbar height
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  });
+</script>
