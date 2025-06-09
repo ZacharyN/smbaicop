@@ -1,0 +1,212 @@
+---
+
+---
+---
+// PricingBenefits.astro
+---
+
+<section class="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-900 mb-6 leading-tight">
+          Investment &
+          <span class="bg-gradient-to-r from-accent-cyan-500 to-accent-lime-500 bg-clip-text text-transparent">
+            Membership Benefits
+          </span>
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Choose the membership that's right for your business
+        </p>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div class="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Founder Membership -->
+        <div class="relative">
+          <!-- Popular badge -->
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+            <div class="bg-gradient-to-r from-accent-lime-400 to-accent-lime-500 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Founding Members
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl shadow-xl border-2 border-accent-lime-200 p-8 pt-12 h-full">
+            <!-- Header -->
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold text-primary-900 mb-2">Founder Membership</h3>
+              <div class="flex items-baseline justify-center mb-4">
+                <span class="text-5xl font-bold text-primary-900">$99</span>
+                <span class="text-xl text-gray-600 ml-2">/month</span>
+              </div>
+              <p class="text-gray-600">Limited time for early adopters</p>
+            </div>
+
+            <!-- Founder Perks -->
+            <div class="mb-8 p-6 bg-gradient-to-br from-accent-lime-50 to-green-50 rounded-2xl border border-accent-lime-100">
+              <h4 class="font-semibold text-primary-900 mb-4 flex items-center">
+                <svg class="w-5 h-5 text-accent-lime-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                </svg>
+                Exclusive Founder Benefits
+              </h4>
+              <div class="space-y-3">
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-accent-lime-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span class="text-gray-700 text-sm">Digital certificate of recognition to share on social media</span>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-accent-lime-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span class="text-gray-700 text-sm">Listed on our website for the duration of your membership</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="w-full bg-gradient-to-r from-accent-lime-400 to-accent-lime-500 hover:from-accent-lime-500 hover:to-accent-lime-600 text-white font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 text-lg">
+              Become a Founder
+            </button>
+          </div>
+        </div>
+
+        <!-- Regular Membership -->
+        <div class="relative opacity-60">
+          <div class="bg-white rounded-3xl shadow-lg border border-gray-200 p-8 h-full">
+            <!-- Header -->
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold text-gray-600 mb-2">Standard Membership</h3>
+              <div class="flex items-baseline justify-center mb-4">
+                <span class="text-5xl font-bold text-gray-600">$149</span>
+                <span class="text-xl text-gray-500 ml-2">/month</span>
+              </div>
+              <p class="text-gray-500">Available starting September 2025</p>
+            </div>
+
+            <!-- Placeholder for future features -->
+            <div class="mb-8 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+              <h4 class="font-semibold text-gray-600 mb-4">Standard Benefits</h4>
+              <p class="text-gray-500 text-sm">All community features included</p>
+            </div>
+
+            <!-- Disabled CTA Button -->
+            <button class="w-full bg-gray-300 text-gray-500 font-semibold py-4 px-6 rounded-xl text-lg cursor-not-allowed" disabled>
+              Coming September 2025
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- What's Included Section -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold text-primary-900 mb-12 text-center">Everything Included in Your Membership</h3>
+
+        <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-12">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Left Column -->
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-accent-cyan-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Monthly structured meetings</h4>
+                  <p class="text-gray-700 text-sm">with expert facilitation and peer problem-solving (virtual + quarterly in-person)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-accent-lime-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Real-world AI tool evaluations</h4>
+                  <p class="text-gray-700 text-sm">from SMB practitioners who've tested them in similar business environments</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Strategic pilot design workshops</h4>
+                  <p class="text-gray-700 text-sm">to avoid costly AI experiments that don't deliver results</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-accent-cyan-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Risk management frameworks</h4>
+                  <p class="text-gray-700 text-sm">that protect your data without blocking innovation</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-accent-lime-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Change management strategies</h4>
+                  <p class="text-gray-700 text-sm">to overcome staff resistance and build sustainable AI adoption</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Exclusive member community</h4>
+                  <p class="text-gray-700 text-sm">with ongoing collaboration, tool sharing, and access to all meeting materials</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-accent-cyan-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Expert guidance from proven practitioners</h4>
+                  <p class="text-gray-700 text-sm">who understand SMB constraints and realities</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-6 h-6 bg-accent-lime-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary-900 mb-1">Peer learning from business leaders</h4>
+                  <p class="text-gray-700 text-sm">navigating the same AI implementation challenges you face</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
