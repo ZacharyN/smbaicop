@@ -28,6 +28,7 @@
       <form
         name="membership-application"
         method="POST"
+        action="/"
         data-netlify="true"
         netlify-honeypot="bot-field"
         class="space-y-8"
@@ -193,6 +194,19 @@
   </div>
 </section>
 
+<!-- Hidden form for Netlify to detect during build -->
+<form name="membership-application" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="firstName" />
+  <input type="text" name="lastName" />
+  <input type="email" name="email" />
+  <input type="tel" name="phone" />
+  <input type="text" name="company" />
+  <textarea name="aiExperience"></textarea>
+  <textarea name="communityInterest"></textarea>
+  <input type="checkbox" name="codeOfConduct" />
+  <input type="checkbox" name="subscriptionTerms" />
+</form>
+
 <!-- What Happens Next Section -->
 <section class="py-16 sm:py-20 bg-white">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -239,34 +253,3 @@
     </div>
   </div>
 </section>
-
-<!-- FAQ Section -->
-<!--<section class="py-16 sm:py-20 bg-gray-50">-->
-<!--  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">-->
-<!--    <div class="text-center mb-12">-->
-<!--      <h2 class="text-3xl font-bold text-primary-900 mb-4">Frequently Asked Questions</h2>-->
-<!--    </div>-->
-
-<!--    <div class="space-y-8">-->
-<!--      <div class="bg-white rounded-2xl p-6 shadow-sm">-->
-<!--        <h3 class="text-lg font-bold text-primary-900 mb-3">What if I'm new to AI?</h3>-->
-<!--        <p class="text-gray-700">We welcome members at all experience levels! Our community includes both AI newcomers and experienced practitioners. The peer learning format means everyone contributes and learns from each other.</p>-->
-<!--      </div>-->
-
-<!--      <div class="bg-white rounded-2xl p-6 shadow-sm">-->
-<!--        <h3 class="text-lg font-bold text-primary-900 mb-3">How much time commitment is required?</h3>-->
-<!--        <p class="text-gray-700">We meet monthly for 2-3 hours (virtual), plus quarterly in-person meetings. Many members also participate in ongoing discussions and collaborative projects between meetings.</p>-->
-<!--      </div>-->
-
-<!--      <div class="bg-white rounded-2xl p-6 shadow-sm">-->
-<!--        <h3 class="text-lg font-bold text-primary-900 mb-3">Can I cancel my membership anytime?</h3>-->
-<!--        <p class="text-gray-700">Yes, you can cancel your monthly subscription at any time. We just ask for 30 days notice to help with planning and to ensure a smooth transition.</p>-->
-<!--      </div>-->
-
-<!--      <div class="bg-white rounded-2xl p-6 shadow-sm">-->
-<!--        <h3 class="text-lg font-bold text-primary-900 mb-3">What makes this different from online courses?</h3>-->
-<!--        <p class="text-gray-700">Unlike static courses, our community focuses on real-world application and peer collaboration. You'll work on actual business challenges with guidance from both experts and peers facing similar situations.</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
