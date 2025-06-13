@@ -3,17 +3,43 @@ import Footer from "../components/Footer.astro";
 ---
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>SMB AI Community of Practice - Gain Clarity & Confidence in AI Implementation</title>
-		<meta name="description" content="Join 15 SMB leaders to move from AI curiosity to measurable business impact through structured peer learning and proven implementation frameworks.">
-	</head>
-	<body>
-		<slot />
-		<Footer />
-		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-	</body>
+    <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+       <meta name="generator" content={Astro.generator} />
+
+       <!-- SEO Meta Tags -->
+       <title>Bridge the Gap Between AI Hype and Real Results - Omaha SMB AI Community</title>
+       <meta name="description" content="Join business leaders exploring practical AI applications. Move from 'Will it work?' to 'How do we make it work?' through peer learning and expert guidance in our Omaha-area SMB community.">
+
+       <!-- Open Graph Meta Tags (Facebook, LinkedIn, etc.) -->
+       <meta property="og:type" content="website" />
+       <meta property="og:title" content="Bridge the Gap Between AI Hype and Real Results" />
+       <meta property="og:description" content="Join business leaders exploring practical AI applications. Move from 'Will it work?' to 'How do we make it work?' through peer learning and expert guidance in our Omaha-area SMB community." />
+       <meta property="og:image" content="https://smbaicop-omaha.netlify.app/linkedin_og_image.png" />
+       <meta property="og:image:width" content="1200" />
+       <meta property="og:image:height" content="630" />
+       <meta property="og:image:alt" content="Bridge the Gap Between AI Hype and Real Results" />
+       <meta property="og:url" content="https://smbaicop.com" />
+       <meta property="og:site_name" content="Omaha SMB AI Community" />
+
+       <!-- Twitter Card Meta Tags -->
+       <meta name="twitter:card" content="summary_large_image" />
+       <meta name="twitter:title" content="Bridge the Gap Between AI Hype and Real Results" />
+       <meta name="twitter:description" content="Join business leaders exploring practical AI applications. Move from 'Will it work?' to 'How do we make it work?' through peer learning and expert guidance." />
+       <meta name="twitter:image" content="https://smbaicop-omaha.netlify.app/linkedin_og_image.png" />
+       <meta name="twitter:image:alt" content="SMB AI Community of Practice" />
+
+       <!-- Additional LinkedIn-specific optimization -->
+       <meta property="article:author" content="Lantern Strategic" />
+
+       <!-- Canonical URL -->
+       <link rel="canonical" href="https://smbaicop.com" />
+    </head>
+    <body>
+       <slot />
+       <Footer />
+       <script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    </body>
 </html>
